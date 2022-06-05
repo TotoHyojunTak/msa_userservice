@@ -41,6 +41,8 @@ dependencies {
 
     // SpringBoot 2.6.2 + Spring Cloud 2021.0.0 - validation 에러 날경우 활성화할 것
     //implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+
+    implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.3'
 }
 
 dependencyManagement {

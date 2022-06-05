@@ -6,9 +6,9 @@ spring:
     name: user-service
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://129.154.50.127:3306/user
-    username: user
-    password: user
+    url: ENC(HmaWCM46554niTe9kdJ3hRxlzxcdA7xEZBEe9Hxj6ropjuSRyMcvsgGaO0IoOb+O)
+    username: ENC(RjjpzvxL/gYwvDZafuHQzw==)
+    password: ENC(BTK6C0cwdWuS26AuNBds5dEjkoXMIW9W)
   jpa:
     hibernate:
       ddl-auto: update
@@ -39,3 +39,8 @@ eureka:
 
 greeting:
   message: Welcome to the Simple User Service
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    password: A421080gsm
