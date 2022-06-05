@@ -8,7 +8,7 @@ spring:
     driver-class-name: org.mariadb.jdbc.Driver
     url: ENC(HmaWCM46554niTe9kdJ3hRxlzxcdA7xEZBEe9Hxj6ropjuSRyMcvsgGaO0IoOb+O)
     username: ENC(RjjpzvxL/gYwvDZafuHQzw==)
-    password: ENC(BTK6C0cwdWuS26AuNBds5dEjkoXMIW9W)
+    password: ENC(37TO27Viq/jNw0A51e2bFWTsvb/GYWtR)
   jpa:
     hibernate:
       ddl-auto: update
