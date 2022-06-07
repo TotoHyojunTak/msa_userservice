@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: user-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: ENC(HmaWCM46554niTe9kdJ3hRxlzxcdA7xEZBEe9Hxj6ropjuSRyMcvsgGaO0IoOb+O)
@@ -45,6 +50,12 @@ jasypt:
     bean: jasyptStringEncryptor
     password: A421080gsm
 
-token:
-  expiration_time: 86400000
-  secret: user_token
+#token:
+#  expiration_time: 86400000
+#  secret: user_token
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, busrefresh

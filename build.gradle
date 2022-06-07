@@ -46,6 +46,17 @@ dependencies {
 
     // token
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+
+    // spring-cloud-config-uri
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    // spring-cloud-config-bootstrap
+    implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+
+    // spring actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+
 }
 
 dependencyManagement {
