@@ -14,9 +14,9 @@ class UserApplicationTests {
 
     @Test
     void jasypt(){
-        String url = "jdbc:mariadb://129.154.50.127:3306/user";
-        String username = "user";
-        String password = "toto0309!@";
+        String url = "jdbc:mariadb://4545:3306/4545454";
+        String username = "123";
+        String password = "1245";
 
         String encryptUrl = jasyptEncrypt(url);
         String encryptUsername = jasyptEncrypt(username);
