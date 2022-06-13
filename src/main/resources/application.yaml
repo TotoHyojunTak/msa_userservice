@@ -1,19 +1,26 @@
 server:
+  shutdown: graceful
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+  tomcat:
+    uri-encoding: UTF-8
   port: 0
 
 spring:
   application:
     name: user-service
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: ENC(HmaWCM46554niTe9kdJ3hRxlzxcdA7xEZBEe9Hxj6ropjuSRyMcvsgGaO0IoOb+O)
-    username: ENC(RjjpzvxL/gYwvDZafuHQzw==)
-    password: ENC(37TO27Viq/jNw0A51e2bFWTsvb/GYWtR)
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: ENC(HmaWCM46554niTe9kdJ3hRxlzxcdA7xEZBEe9Hxj6ropjuSRyMcvsgGaO0IoOb+O)
+#    username: ENC(RjjpzvxL/gYwvDZafuHQzw==)
+#    password: ENC(37TO27Viq/jNw0A51e2bFWTsvb/GYWtR)
   jpa:
     hibernate:
       ddl-auto: update
@@ -45,6 +52,7 @@ eureka:
 greeting:
   message: Welcome to the Simple User Service
 
+
 jasypt:
   encryptor:
     bean: jasyptStringEncryptor
@@ -59,3 +67,8 @@ management:
     web:
       exposure:
         include: refresh, health, beans, busrefresh
+
+
+logging:
+  level:
+    com.ecom.user.client: DEBUG
